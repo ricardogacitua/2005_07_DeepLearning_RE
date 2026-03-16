@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Notebook-Style Article</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="top-bar">
+      <h1>Python Mini Notebook: Priority Queues with <span>heapq</span></h1>
+      <button id="toggle-lab" class="toggle-lab" aria-expanded="false">Open Python Lab</button>
+    </header>
+
+    <main class="layout">
+      <article class="content" id="examples-container"></article>
+
+      <aside id="lab-panel" class="lab-panel" aria-hidden="true">
+        <div class="lab-header">
+          <h2 id="lab-title">Python Lab <span class="status-dot" id="runtime-status"></span></h2>
+          <div class="header-actions">
+            <button id="run-code">Run</button>
+            <button id="close-lab" aria-label="Close Python Lab">×</button>
+          </div>
+        </div>
+
+        <p class="lab-note">Selected example runs in an isolated context every time.</p>
+        <textarea id="code-editor" spellcheck="false"></textarea>
+
+        <div class="lab-actions">
+          <button id="clear-output">Clear Output</button>
+        </div>
+
+        <section class="output-section">
+          <h3>Output</h3>
+          <pre id="output">Runtime loading...</pre>
+        </section>
+      </aside>
+    </main>
+  </body>
+</html>
